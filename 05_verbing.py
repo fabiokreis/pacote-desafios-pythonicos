@@ -11,8 +11,9 @@ Retorne o resultado da string.
 """
 
 def verbing(s):
-    # +++ SUA SOLUÇÃO +++
-    return
+    sufix = 'ly' if s[-3:] == 'ing' else 'ing'
+    return s if len(s) < 3 else ''.join([s, sufix])
+    # return s if len(s) < 3 else s + 'ly' if s[-3:] == 'ing' else s + 'ing'
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
