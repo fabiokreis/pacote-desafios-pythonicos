@@ -13,7 +13,8 @@ a-frente + b-frente + a-trás + b-trás
 
 
 def front_back(a, b):
-    return f'{a[:split_size(a)]}{b[:split_size(b)]}{a[split_size(a):]}{b[split_size(b):]}'
+    return ''.join([a[:split_size(a)], b[:split_size(b)], a[split_size(a):], b[split_size(b):]])
+    # return f'{a[:split_size(a)]}{b[:split_size(b)]}{a[split_size(a):]}{b[split_size(b):]}'
 
 
 def split_size(s):
