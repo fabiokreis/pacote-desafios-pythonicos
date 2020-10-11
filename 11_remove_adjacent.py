@@ -8,9 +8,18 @@ Exemplo: [1, 2, 2, 3]
 Irá retornar: [1, 2, 3]
 """
 
+
 def remove_adjacent(nums):
-    # +++ SUA SOLUÇÃO +++
-    return
+    new_list = []
+    # Solução não Pythônica
+    i = 0
+    while i < len(nums) - 1:
+        if i == 0:
+            new_list.append(nums[i])
+        if nums[i] != nums[i + 1]:
+            new_list.append(nums[i + 1])
+        i += 1
+    return new_list
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
